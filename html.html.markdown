@@ -4,6 +4,7 @@ filename: learnhtml.html
 contributors:
   - ["Alois de Gouvello", "https://github.com/aloisdg"]
   - ["Martin Naumann", "http://www.geekonaut.de"]
+  - ["Terence Eden", "https://shkspr.mobi/blog/"]
 ---
 
 HTML, for HyperText Markup Language, is a declarative language used for creating and visually representing a webpage. Web browsers can read HTML files and render them into visible or audible web pages.
@@ -34,6 +35,13 @@ HTML is a subset of Standard Generalized Markup Language (SGML) and is specified
     <meta charset="utf-8" />
 
     <title>Here we write the Document title</title>
+    
+    <!--  If you are using an external style sheet, it needs to be declared in the <head>. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--  If you are using an external JavaScript file, it needs to be declared in the <head>. -->
+    <script src="javascript.js"></script>
+
   </head>
   <body>
   	<!-- Here we write the Document content -->
@@ -58,11 +66,11 @@ HTML is a subset of Standard Generalized Markup Language (SGML) and is specified
         separated by one or multiple blank lines.
       </p>
       <p>
-        This is another paragraph. This is <strong>important</strong>.
+        This is another paragraph. This text is <strong>important</strong> and this text has <em>emphasis</em>.
         To break the line, use <br />.
 
 		    <!-- With hyperlink we can navigate anywhere! As you can see, there are more attributes, like "href" to point to the target of the link or "title" to tell the browser what the link shall be described as when hovering-->
-		    <a href="example.org" title="example link">Go to example!</a>
+		    <a href="http://example.org" title="example link">Go to example!</a>
 
         <!-- Hyperlinks can also go to anchors or elements with a specific id in the same document -->
         <a href="#bottom">Go to bottom</a>
@@ -77,7 +85,11 @@ HTML is a subset of Standard Generalized Markup Language (SGML) and is specified
 
 		  <!-- HTML supports image, audio, video and more. -->
       <img src="example.jpg" alt="this is an example" />
-
+      
+	<!-- HTML lets you nest tags within each other.  Here's how we make an image a clickable link. -->
+	<a href="http://example.org" title="example link">
+		<img src="example.jpg" alt="this is an example" />
+	</a>
       <!-- HTML can also do lists -->
 
       <!-- either with numbering -->
@@ -111,7 +123,7 @@ HTML is a subset of Standard Generalized Markup Language (SGML) and is specified
 - [W3C Validator](https://validator.w3.org/) - Official HTML Validator
 - [WebPlatform.org](http://www.webplatform.org/) - Authoritative resource for documentation
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/) - Information about Open Web technologies
-- [CSS-Tricks](https://css-tricks.com/) - Tips, Tricks, and Techniques on using CSS.
-- [HTML5 Rocks](http://www.html5rocks.com/en/) - A resource for open web HTML5 developer
-- [Encoded characters table](http://dev.w3.org/html5/html-author/charref) -
+- [CSS-Tricks](https://css-tricks.com/) - Tips, Tricks, and Techniques on using CSS
+- [HTML5 Rocks](http://www.html5rocks.com/en/) - A resource for HTML5 developers
+- [Encoded characters table](http://dev.w3.org/html5/html-author/charref) - How to use special characters
 - [Can I use ... ?](http://caniuse.com/) - Website about web browser compatibility
